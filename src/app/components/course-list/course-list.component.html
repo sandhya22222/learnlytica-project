@@ -1,0 +1,12 @@
+
+
+
+ <div class="row">
+
+    <!-- <pre>{{myCourseList |json}}</pre> -->
+    <div class="col" *ngFor="let course of myCourseList?.['sub-home'].data">
+        <app-courses-library [imgid]="course._id" [configs]="course['spayee:resource']">
+
+        </app-courses-library> 
+    </div>
+</div>
